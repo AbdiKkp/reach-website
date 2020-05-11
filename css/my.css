@@ -1,0 +1,17 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "open sans" ,sans-serif;
+}
+footer{
+	background: #f1f1f1;
+	
+}
+
+.footer-container{
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
