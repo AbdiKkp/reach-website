@@ -1,17 +1,81 @@
-body{
+*{
 	margin: 0;
 	padding: 0;
-	font-family: "open sans" ,sans-serif;
-}
-footer{
-	background: #f1f1f1;
-	
+	box-sizing: border-box;
 }
 
-.footer-container{
-	margin: auto;
-	padding: 0 20px;
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+nav ul {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	padding: 1rem;
+	min-height: 10vh;
+
+}
+
+.hero{
+	min-height: 100vh;
+	background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+ }
+
+ .hero h2{
+ 	text-align: center;
+ 	margin: 2rem;
+ }
+
+ .hero button{
+ 	padding: 1rem 2rem;
+ 	background: lightgreen;
+ 	border : none;
+ }
+
+.intro{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+.intro img{
+width: 100%;
+
+
+}
+
+.intro2{
+	background: black@white;
+	flex: 1 1 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.intro-img{
+	flex: 1 1 20rem;
+	background: lightblue;
+
+}
+
+.intro2{
+	padding: 2rem;
+
+}
+
+.intro p{
+   padding: 1rem;
 }
