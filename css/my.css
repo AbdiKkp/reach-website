@@ -5,7 +5,7 @@
 }
 
 html{
-	font-size: 62.5%;
+	font-size: 12px;
 }
 
 body{
@@ -105,11 +105,3 @@ text-align: center;
 	padding: 5rem;
 }
 
-@media screen and(max-width: 932px){
-	nav{
-		text-align: center;
-	}
-	#logo {
-		padding: 2rem;
-	}
-}
