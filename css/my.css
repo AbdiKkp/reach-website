@@ -1,117 +1,615 @@
-*{
+/* ---------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------- */
+
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html{
-	font-size: 100%;
+html,
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+ 
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
-body{
-	font-family: 'Fredoka One', cursive;
-font-family: 'Patua One', cursive;
+/* ---------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------- */
+
+
+
+.row{
+	max-width: 1149px;
+	margin: 0 auto;
+
 }
 
-h1{
-	font-size: 2.6rem;
+section{
+    padding: 80px 0;
 }
 
-li,button,label,input,p{
-	 font-size: 2rem;
+
+/* ---------------------------------- */
+/* HEADINGS */
+/* ---------------------------------- */
+
+
+h1, h2, h3 {
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    
+   
 }
 
-h2{
-	font-size: 4.8rem;
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+     word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: blueviolet;
 }
 
 h3{
-	font-size: 3rem;
-	font-weight: normal;
+    font-size: 130%;
+    margin-bottom: 18px;
+    color: blueviolet;
 }
 
-h4, h5{
-font-size: 2.8rem;
-}
-
-a{
-	color: white;
-	text-decoration: none;
-}
-
-button{
-	padding: 2rem 6rem;
-	background: #4c6e97;
-	border: none;
-	color: white;
-	border-radius: 1rem;
-	font-size: 1.8rem;
-	cursor: pointer;
-	font-family: 'Pangolin', cursive;
-	font-size: 2rem;
-
-
-}
-/* Nav section WITH HERO */
-
-.main-head{
-	background: #131c27;
-	color: white;
-}
-
-nav{
-	padding: 2rem;
-	display: flex;
-	width: 90%;
-	margin: auto;
-	align-items: center;
-	min-height: 10vh;
-	flex-wrap: wrap;
-	
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 
-nav ul{
-	display: flex;
-	flex: 1 1 40rem;
-	justify-content: space-around;
-	align-items: center;
-	list-style: none;
-font-size: 2rem;
+/* -----------PARAGRAPHS---------------- */
+
+
+.long-copy{
+    line-height: 145%;
+    width: 80%;
+    margin-left: 15%;
+    font-family: 'Libre Baskerville', serif;
 
 }
 
-#logo{
-	flex: 2 1 40rem;
-	font-family: 'Permanent Marker', cursive;
-	font-weight: 400;
+.New{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* -----------LINKS---------------- */
+
+a:link,
+a:visited {
+
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+      border-bottom: 1px solid transparent;
+}
+
+/* ---------------------------------- */
+/* -----------BUTTONS---------------- */
+/* ---------------------------------- */
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+   background-color: #7FFF94;
+    transition: background-color 0.6s;
+    cursor: pointer;
+}
+
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]
+{
+    border: 1px solid #e67e22;
+     
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e67e22;
+    color: #fff;
+    background-color: #37673F ;
+}
+
+.btn:hover,
+.btn:active,
+input[type_submit]:hover,
+input[type_submit]:active{
+    
+    background-color: #cf6d17;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #ed7e22;
+    border: 1px solid #ed7e22;
+    color: #fff;
+    margin-right: 19px;
+}
+
+.btn-ghost:link
+.btn-ghost:visited{
+    border: 1px solid #ed7e22;
+    color: white;
+    
+}
+
+
+
+/* ---------------------------------- */
+/* HEADER */
+/* ---------------------------------- */
+
+
+
+header {
+
+background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url(https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+   height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
-.hero {
-	min-height: 87vh;	
-	background-size: cover;
-	background-position: center;
-background-image: linear-gradient(rgba(0, 0, 0,0.5), transparent),url("https://images.pexels.com/photos/2409681/pexels-photo-2409681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 25px;  
+
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 53px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+     border-bottom: 2px solid #e67e22;
+}
+
+/* ---------------------------------- */
+/* -----------Features---------------- */
+/* ---------------------------------- */
+
+.section-features .long-copy {
+    
+    margin-bottom: 40px;
 }
 
 
-.hero h3{
-	padding: 5rem;
+/* ---------------------------------- */
+/* -----------Meals---------------- */
+/* ---------------------------------- */
+
+.section-meals{
+    padding: 0px;
 }
 
-@media screen and(max-width: 932px){
-	nav{
-		text-align: center;
-	}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
 
-	#logo {
-		padding: 2rem;
-	}
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* ---------------------------------- */
+/* ---------- How it works ---------------- */
+/* ---------------------------------- */
+
+
+
+.section-steps{
+    background-color: #ffe0e0;
+}
+.steps-box:first-child {
+    
+    text-align: right;
+    padding-right: 3%;
+     margin-top: 30px;
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
+
+}
+
+.app-screen {
+    
+    width: 40%;
+    
+    
+}
+ 
+
+.works-step {
+    
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-step div  {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 15px;
+    
+}
+
+.btn-app {
+    text-decoration: none;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
+/* ---------------------------------------- --*/
+/* ---WE'RE CURRENTLY IN THESE CITIES---------*/
+/* ----------------------------------------- */
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+
+/* ---------------------------------------- --*/
+/* ----------- section-testimonial ------------*/
+/* ----------------------------------------- */
+
+.white{
+    color: #fff;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 350%;
+    display: block;
+    position: absolute
+    top: 0px;
+    left: -3px;
+    margin-top: 45px;
+    
+}
+
+cite{
+    font-size: 90%;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    display: block;
+    margin-top: 50px
+}
+
+cite img {
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.long-copy2{
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+/* ---------------------------------------- --*/
+/* ----------- section plans  ------------*/
+/* ----------------------------------------- */
+
+.section-plans {
+    background-color: #ffe0e0;
+
+}
+
+.plan-box {
+    background-color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://dierezepte.com/wp-content/uploads/2018/07/Tacco-Salat-Rezept-1300x975.jpg);
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 5%;
+    color: #fff;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+  
+}
+
+.plan-box div {
+     padding: 15px;
+    border-bottom: 0.5px solid #57905c;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 210%;
+    margin-bottom: 10px;
+    color: #e67e22;
+
+}
+
+.plan-price-meal {
+    font-size: 75%;
+}
+
+.plan-price span {
+    font-size: 40%;
+    font-weight: 300;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+    letter-spacing: -1px
+    
+}
+
+/* ---------------------------------------- --*/
+/* ----WE'RE HAPPY TO HEAR FROM YOU ---*/
+/* ----------------------------------------- */
+
+.contact-form {
+    width: 100%;
+    margin: 0 0;
+    
+}
+
+input[type=text],
+input[type=email],
+select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* ---------------------------------------- --*/
+/* -----------------Footer -------------------*/
+/* ----------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color : 0.2s;
+    margin-right: 14px
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 170%;
+}
+
+.social-links li ion-icon,
+.social-links li ion-icon,
+.social-links li ion-icon,
+.social-links li ion-icon {
+    transition: color : 0.5s;
+}
+
+.social-links li ion-icon:hover{
+    color: #3b5998; 
+}
+
+.social-links li ion-icon:hover{
+    color: #00aced; 
+}
+
+.social-links li ion-icon:hover{
+    color: #dd4b39; 
+}
+
+.social-links li ion-icon:hover{
+    color: #517fa4; 
+}
+
+.social-links one:hover {
+    color: black;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
 }
