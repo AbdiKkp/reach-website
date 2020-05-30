@@ -280,7 +280,7 @@ url(https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg?auto=comp
     z-index: 9999;
 }
 
-. sticky .main-nav{
+.sticky .main-nav{
     margin-top: 18px;
 }
 
